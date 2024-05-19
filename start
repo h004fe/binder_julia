@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Change Julia Kernel (1.10)
+jupyter notebook --generate-config
+echo "c.MultiKernelManager.default_kernel_name = 'julia-1.10'" >> /home/jovyan/.jupyter/jupyter_notebook_config.py
+echo "c.MappingKernelManager.default_kernel_name = 'julia-1.10'"  >> /home/jovyan/.jupyter/jupyter_notebook_config.py
+echo "c.AsyncMultiKernelManager.default_kernel_name = 'julia-1.10'"  >> /home/jovyan/.jupyter/jupyter_notebook_config.py
+echo "c.AsyncMappingKernelManager.default_kernel_name = 'julia-1.10'"  >> /home/jovyan/.jupyter/jupyter_notebook_config.py
+echo "c.GatewayKernelManager.default_kernel_name = 'julia-1.10'"  >> /home/jovyan/.jupyter/jupyter_notebook_config.py
+
+export JULIA_NUM_THREADS=888
+export MAPBOX_API_KEY=pk.eyJ1IjoiZWxsaW90aHVvemVub24iLCJhIjoiY2tmeGt1cXp0MjB3NjJ6bXo4c2g0N21hdyJ9.Jpjq1eUnaOd44D57HB5kXA
+exec "$@"
