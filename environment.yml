@@ -5,6 +5,8 @@ dependencies:
   - numpy
   - pandas
   - matplotlib
-#  - pip
-#  - pip:
+  - pip
+  - pip:
+    - jupyterlab
+    - jupyterlab-git
 #    - pyecharts
