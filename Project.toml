@@ -1,9 +1,5 @@
-name = "Cxx"
-uuid = "a0b5b9ef-44b7-5148-a2d1-f6db19f3c3d2"
-version = "0.4.0"
-
 [compat]
-julia = "=1.10"
+julia = "=1.10.4"
 
 [deps]
 ArrayAllocators = "c9d4266f-a5cb-439d-837c-c97b191379f5"
