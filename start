@@ -1,5 +1,7 @@
 #!/bin/bash
 
+python3 -m ckernel install ckernel "C/C++"
+
 #Change Julia Kernel (1.10)
 jupyter notebook --generate-config
 echo "c.MultiKernelManager.default_kernel_name = 'julia-1.10'" >> /home/jovyan/.jupyter/jupyter_notebook_config.py
